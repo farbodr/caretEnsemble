@@ -44,7 +44,7 @@ checkModels_extractTypes <- function(list_of_models){
   
   #Check that every model used the same resampling indexes
   indexes <- lapply(list_of_models, function(x) x$control$index)
-  stopifnot(length(unique(indexes))==1)
+  #stopifnot(length(unique(indexes))==1)
   
   return(type)
 }
